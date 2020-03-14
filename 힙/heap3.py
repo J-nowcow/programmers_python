@@ -1,20 +1,32 @@
 import heapq as hq
+
 def solution(jobs):
-    jobs = [[a[1],a[0]] for a in jobs]
-    answer = 0
     hq.heapify(jobs)
     n = len(jobs)
-    time = 0 # 마지막 작업이 끝난 시간
-    
+    time = 0
+    ajobs = []
+    answer = 0
     while jobs:
-        a = hq.heappop(jobs)
-        if time <= a[1]:
-            time = sum(a); answer += a[0]
-        else:
-            time += a[0]; answer += (time - a[1])
+        tjobs = []
+        while jobs:
+            if jobs[0][0] <= time: tjobs.append(hq.heappop(jobs))
+            else: break
+        tjobs = [[b,a] for a,b in tjobs]
+        ajobs += tjobs
+        
+        if ajobs:
+            ajobs.sort(reverse = True)
+            tmp = ajobs.pop()
+            time += tmp[0]
+            answer += (time - tmp[1]) # 처리된 시간에서 입력된 시간 뺀 값
+        else: time+=1
+        
+    while ajobs:
+        tmp = ajobs.pop()
+        time += tmp[0]
+        answer += (time - tmp[1])
+            
     return answer//n
-
-
 
 jobs = [[0, 3], [1, 9], [2, 6]]
 

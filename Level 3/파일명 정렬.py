@@ -4,6 +4,7 @@
 그냥 head number tail 노가다로 찾아줘도 될 것 같음
 찾은 다음에 key에 하나씩 넣어주면 될 듯
 다른 풀이 보니까 split에도 \d+ 들어갈 수 있나봄 처음알았
++) 그냥 split 말고 re.split이라는 친구가 따로 
 """
 import re
 

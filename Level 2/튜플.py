@@ -1,5 +1,4 @@
-#카카오 코테 실전 2번
-#2시 33분 해결
+#https://programmers.co.kr/learn/courses/30/lessons/64065
 """
 전체 숫자 개수가 100개 이하니까 그냥 대충 짜줘도 돌아감
 

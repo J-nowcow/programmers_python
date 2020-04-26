@@ -1,4 +1,4 @@
-
+#https://programmers.co.kr/learn/courses/30/lessons/64061
 """
 하나씩 빈 스택에 채워주면서 같은거 두개 나오면 pop 두번 해주기
 board가 가로로 주어져 있는데 이거 세로로 바꿔주면 훨씬 쉬워질듯

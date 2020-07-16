@@ -1,3 +1,5 @@
+# https://programmers.co.kr/learn/courses/30/lessons/67258
+
 def solution(gems):
     s = set(gems)
     d = {}

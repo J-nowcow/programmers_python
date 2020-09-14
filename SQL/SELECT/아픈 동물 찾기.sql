@@ -1,0 +1,5 @@
+-- WHERE을 쓰면 필요한 정보만 얻어올 수 있다.
+-- SQL에서는 비교문 ==이 아니라 =이다.
+SELECT ANIMAL_ID, NAME FROM ANIMAL_INS
+WHERE INTAKE_CONDITION = "Sick"
+ORDER BY ANIMAL_ID;

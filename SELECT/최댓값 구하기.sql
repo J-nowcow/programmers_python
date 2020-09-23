@@ -1,2 +1,0 @@
-SELECT MAX(datetime)
-FROM ANIMAL_INS;

@@ -1,0 +1,3 @@
+-- MIN을 쓰면 최솟값을 구할 수 있다.
+SELECT  MIN(DATETIME)
+FROM   ANIMAL_INS;

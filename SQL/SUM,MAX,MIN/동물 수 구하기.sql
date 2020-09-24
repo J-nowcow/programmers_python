@@ -1,0 +1,3 @@
+-- COUNT를 쓰면 각각의 수를 구할 수 있다.
+SELECT  COUNT(ANIMAL_ID)
+FROM    ANIMAL_INS;

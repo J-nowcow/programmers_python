@@ -10,7 +10,7 @@ def solution(gems):
     answer = 1000000
     x = 0; y = 0
     a = [0,0]
-    while y < len(gems):
+    while y <= len(gems):
         if check == len(s):
             if answer > y-x:
                 answer = y-x
@@ -19,6 +19,7 @@ def solution(gems):
             if d[gems[x]] == 0: check -= 1
             x += 1
         else:
+            if y == len(gems): break
             if d[gems[y]] == 0: check += 1
             d[gems[y]] += 1
             y += 1
